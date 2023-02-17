@@ -2,6 +2,7 @@
     <head>
       <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
       <link rel="stylesheet" href="/static/site.css">
+      <script src="/static/site.js"></script>
     </head>
     <title>Clearwind Consulting</title>
     <body>
@@ -9,19 +10,30 @@
         <div class="row m-3 mt-5">
           <div class="col mt-5">
             <img src="/static/clearwind.jpg" title="Clearwind Consulting" />
-            <br>
-            <a class="text-muted" href="mailto:andy@clearwind.ca">Contact</a> &bull; 
-            <a class="text-muted" href="https://mastodon.social/@andymckay">Mastodon</a> &bull;
-            <a class="text-muted" href="https://linkedin.com/in/anmckay">LinkedIn</a>
+            <div class="mt-3">
+              <a class="text-muted" href="mailto:andy@clearwind.ca">Contact</a> &bull; 
+              <a class="text-muted" href="https://mastodon.social/@andymckay">Mastodon</a> &bull;
+              <a class="text-muted" href="https://linkedin.com/in/anmckay">LinkedIn</a>
+            </div>
           </div>
           <div class="col mt-5">
-            <div>
+            <div class="mb-5">
               <h4>Actions Analyzer Preview Release</h4>
               <p class="form-text">Feb 17 2023</p>
               <p>We are excited to announce the initial <b>preview release</b> of <a href="https://analyser.clearwind.ca">GitHub Actions Analyser</a>. Ever wondered where the money you spend on Actions is going? Or which part of your organisation is costing the most?</p>
               <p>This is a tool to parse the Actions billing CSV files that GitHub outputs and provides you details on spend across repositories, workflows. Features include: ability to compare month to month spend and spot workflows that have high variability.</p>
               <p><a class="btn btn-primary" href="https://analyser.clearwind.ca">Check it out now</a></p>
             </div>
+            <div class="mb-5">
+              <h4>Subscribe to announcements</h4>
+              <div class="card-body">
+                <form id="subscribe">
+                  <p>Sign up for anouncements from ClearWind. Unsusbcribe at any time.</p>
+                  <input type="text" name="email" placeholder="What's your email?" /><br>
+                  <button type="submit" value="Subscribe" class="btn btn-primary mt-3">Subscribe</button>
+                </form>
+              </div>
+            </form>
           </div>
         </div>
       </div>
