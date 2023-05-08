@@ -43,12 +43,12 @@ def build():
                 
 
     html_content = base.render({"posts": posts})
-    with open(f"output/index.html", "w") as html_fh:
-        print("Writing output/index.html")
+    with open(f"docs/index.html", "w") as html_fh:
+        print("Writing docs/index.html")
         html_fh.write(html_content)
 
-    print("Writing output/atom.xml")
-    fg.atom_file("output/atom.xml")
+    print("Writing docs/atom.xml")
+    fg.atom_file("docs/atom.xml")
 
 build()
 for changes in watchfiles.watch("content", "themes"):
