@@ -19,10 +19,28 @@ function setupSubscribe(form) {
             }
         })
     });
+}
 
+let setup = JSON.stringify({
+    "name": "Service Catalog",
+    "url": "https://github.com/clearwind-ca/service-catalog",
+    "public": true,
+    "redirect_url": "https://clearwind.ca"
+})
+
+function setupCreate(form) {
+    console.log(form)
+
+    form.querySelector("input.manifest").value = setup;
 }
 
 window.addEventListener("load", (event) => {
     let subscribe = document.getElementById('subscribe')
-    setupSubscribe(subscribe)
+    if (subscribe) { setupSubscribe(subscribe) }
+
+    let personal = document.getElementById('create-personal')
+    if (personal) { setupCreate(personal) }
+
+    let org = document.getElementById('create-org')
+    if (org) { setupCreate(org) }
 });
