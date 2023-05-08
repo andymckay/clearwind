@@ -16,6 +16,7 @@ function setupSubscribe(form) {
             }
             else {
                 form.querySelector('button').textContent = 'Done, thank you.';
+                form.querySelector('button').classList.add('btn-success');
             }
         })
     });
