@@ -42,6 +42,7 @@ def build():
                 fe.content(post["html"], type="html")
                 
 
+    posts = sorted(posts, key=lambda x: x["date"], reverse=True)
     html_content = base.render({"posts": posts})
     with open(f"docs/index.html", "w") as html_fh:
         print("Writing docs/index.html")
