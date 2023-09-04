@@ -43,7 +43,7 @@ def build():
                 
 
     posts = sorted(posts, key=lambda x: x["date"], reverse=True)
-    html_content = base.render({"posts": posts})
+    html_content = base.render({"posts": [posts[0]]})
     with open(f"docs/index.html", "w") as html_fh:
         print("Writing docs/index.html")
         html_fh.write(html_content)
