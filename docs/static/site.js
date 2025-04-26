@@ -34,7 +34,7 @@ function setupCreate(form) {
 
     form.querySelector("input.manifest").value = setup;
 }
-
+/*
 window.addEventListener("load", (event) => {
     let subscribe = document.getElementById('subscribe')
     if (subscribe) { setupSubscribe(subscribe) }
@@ -45,3 +45,4 @@ window.addEventListener("load", (event) => {
     let org = document.getElementById('create-org')
     if (org) { setupCreate(org) }
 });
+*/
