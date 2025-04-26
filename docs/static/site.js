@@ -34,8 +34,19 @@ function setupCreate(form) {
 
     form.querySelector("input.manifest").value = setup;
 }
-/*
+
 window.addEventListener("load", (event) => {
+    const carousel = new bootstrap.Carousel('#portfolio', {
+        interval: 2000,
+        wrap: true,
+        touch: true,
+        ride: 'carousel',
+    });
+
+    /*document.getElementById('portfolio').carousel({
+        interval: 2000
+      })
+    /*
     let subscribe = document.getElementById('subscribe')
     if (subscribe) { setupSubscribe(subscribe) }
 
@@ -44,5 +55,5 @@ window.addEventListener("load", (event) => {
 
     let org = document.getElementById('create-org')
     if (org) { setupCreate(org) }
+    */
 });
-*/
